@@ -1,0 +1,12 @@
+{% extends 'templates/base.html' %}
+{% block heading %}Home{% endblock %}
+
+{% block content %}
+    <form method="post" class='form-horizontal'>{% csrf_token %}
+        {{ form.as_p }}
+        <hr style="background-color:red; height: 2px;">
+        {{ inlineform.as_p }}
+        
+        <input class="btn btn-primary" type="submit" value="Submit" />
+    </form>
+{% endblock %}
