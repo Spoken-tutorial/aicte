@@ -99,7 +99,8 @@ form .aligned p.help {
 }
 
 .colM .aligned .vLargeTextField, .colM .aligned .vXMLLargeTextField {
-    width: 610px;
+    width: 250px;
+    height: 40px;
 }
 
 .checkbox-row p.help {
